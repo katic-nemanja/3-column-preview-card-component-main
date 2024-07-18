@@ -1,0 +1,165 @@
+html{
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsla(0, 0%, 100%, 0.75);
+    /*padding: 30px;*/
+    
+}
+
+
+.card{
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    color:#f2f2f2;
+    width:280px;
+    height: auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.sedans button:hover{
+    background-color: #e38826;
+    color:#f2f2f2;
+    border: 2px solid #f2f2f2;
+}
+
+.suvs button:hover{
+    background-color:#006970;
+    color:#f2f2f2;
+    border: 2px solid #f2f2f2;
+}
+
+.luxury button:hover{
+    background-color:#004241;
+    color:#f2f2f2;
+    border: 2px solid #f2f2f2;
+}
+
+h1{
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 700;
+}
+
+p{
+    font-size: 0.8rem;
+    line-height: 30px;
+    color:hsla(0, 0%, 100%, 0.75);
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+}
+
+button{
+    width:120px;
+    height:40px;
+    border-radius: 17.5px;
+    background-color: white;
+    color: inherit;
+    border:none;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size:0.9rem;
+}
+    button:hover{
+        cursor:pointer;
+    }
+
+
+
+/*
+button{
+        margin-top: 70px;
+        margin-bottom: 20px;
+        font-size:1.1rem;
+        width:155px;
+        height:50px;
+        border-radius: 25px;
+    }
+*/    
+
+.cardPad{
+    padding:35px;
+}
+
+
+
+
+.boje{
+    color:#e38826;
+    color: #006970;
+    color: #004241;
+    color: hsla(0, 0%, 100%, 0.75);
+    color: #f2f2f2;
+}
+
+.colorOrange{
+    background-color:#e38826;
+}
+
+.orange{
+    color:#e38826;
+}
+
+.colorCyan{
+    background-color: #006970;
+}
+
+.cyan{
+    color: #006970;
+}
+
+.colorDarkCyan{
+    background-color: #004241;
+}
+
+.darkCyan{
+    color: #004241;
+}
+.colorTansWhite{
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.colorLightGray{
+    color: #f2f2f2;
+}
+
+
+@media only screen and (min-width: 900px){
+    .card{
+        width: 840px;
+        flex-direction: row;
+        height: auto;
+    }
+
+    button{
+        margin-top: 70px;
+        margin-bottom: 20px;
+        font-size:1.1rem;
+        width:155px;
+        height:50px;
+        border-radius: 25px;
+    }
+
+    body{
+        height: 100vh;
+    }
+    
+    h1{
+        font-size: 2.8rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+}
